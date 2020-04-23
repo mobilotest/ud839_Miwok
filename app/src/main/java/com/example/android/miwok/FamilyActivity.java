@@ -30,17 +30,17 @@ import java.util.ArrayList;
 
 public class FamilyActivity extends AppCompatActivity {
 
-    /**
-     * Handles playback of all the sound files
-     */
-    private MediaPlayer mMediaPlayer;
-    private AudioManager mAudioManager;
-    private MediaPlayer.OnCompletionListener mOnCompletionListener = new MediaPlayer.OnCompletionListener() {
-        @Override
-        public void onCompletion(MediaPlayer mp) {
-            releaseMediaPlayer();
-        }
-    };
+        /**
+         * Handles playback of all the sound files
+         */
+        private MediaPlayer mMediaPlayer;
+        private AudioManager mAudioManager;
+        private MediaPlayer.OnCompletionListener mOnCompletionListener = new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mp) {
+                releaseMediaPlayer();
+            }
+        };
 
     private Handler handler = new Handler();
     AudioManager.OnAudioFocusChangeListener mOnAudioFocusChangeListener =
